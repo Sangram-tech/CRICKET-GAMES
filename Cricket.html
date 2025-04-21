@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bat Ball Stump Game</title>
+</head>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 50px;
+
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+button{
+    font-size: 20px;
+    padding: 10 px 20 px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition:background-color 0.3s easa;
+
+}
+button:hover{
+    background-color: #45a049;
+}
+
+</style>
+<body>
+    <h1>Bat Ball Stump</h1>
+    <button onclick="play('bat')">Bat</button>
+    <button onclick="play('ball')">Ball</button>
+    <button onclick="play('stump')">Stump</button>
+
+    <script>
+        function play(userChoice) {
+            const choices = ['bat', 'ball', 'stump'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+            if (userChoice === computerChoice) {
+                alert("It's a tie! Computer also chose " + computerChoice);
+            } else if (
+                (userChoice === 'bat' && computerChoice === 'ball') ||
+                (userChoice === 'ball' && computerChoice === 'stump') ||
+                (userChoice === 'stump' && computerChoice === 'bat')
+            ) {
+                alert("You win! Computer chose " + computerChoice);
+            } else {
+                alert("You lose! Computer chose " + computerChoice);
+            }
+        }
+    </script>
+</body>
+</html>
