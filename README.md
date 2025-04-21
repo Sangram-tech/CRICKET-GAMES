@@ -58,6 +58,10 @@ If both the player and the computer choose the same option, it results in a tie.
 
 Enjoy the game and feel free to modify it as you like!
 
+## Play the Game
+
+Click here to play the game: [Bat Ball Stump Game](https://sangram-tech.github.io/CRICKET-GAMES/Cricket.html)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
